@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up | WPUber</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<script src="json/Working-animated-illustration.json"></script>
+
+
+    <div class="main">
+
+       
+
+        <!-- Sing in  Form -->
+        <section class="sign-in">
+            <div class="container">
+                <div class="signin-content">
+                    <div class="signin-image">
+                        <lottie-player src="json/Management (female)-animated-illustration.json"  background="transparent"  speed="1"  style="width: 306px; height: 360px;"  autoplay loop preserveAspectRatio="xMidYMid slice"></lottie-player>
+                        <!-- <figure><img src="images/signin-image.jpg" alt="sing up image"></figure> -->
+                        <a href="index.html" class="signup-image-link">Create an account</a>
+                    </div>
+
+                    <div class="signin-form">
+                        <h2 class="form-title">Sign in</h2>
+                        <form method="POST" class="register-form" id="login-form">
+                            <div class="form-group" data-validate="Valid email is required: ex@abc.xyz">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" required placeholder="Your Email"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="your_pass" id="password" required placeholder="Password"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
+                            </div>
+                        </form>
+                        <div class="social-login">
+                            <span class="social-label">Or login with</span>
+                            <ul class="socials">
+                                <li> <a class="btn btn-outline-dark" href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?response_type=code&redirect_uri=https%3A%2F%2Fdash.getastra.com%2Fauth%2Fgoogle_login&client_id=660487358034-aflds64ihtiafguh1luohm0eneg3brhi.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&access_type=online&approval_prompt=auto&flowName=GeneralOAuthFlow" role="button" style="text-transform:none">
+                                    <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+                                    Google
+                                  </a></li> 
+                                <!-- <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JS -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var password = document.getElementById("password")
+  , confirm_password = document.getElementById("confirm_password");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+    </script>
+
+<!-- Minified CSS and JS -->
+<link   rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
+
+
+</body>
+</html>

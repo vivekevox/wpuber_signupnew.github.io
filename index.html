@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up | WPUber</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<script src="json/Working-animated-illustration.json"></script>
+
+
+    <div class="main">
+
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Sign up</h2>
+                        <form method="POST" class="register-form" id="register-form">
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" required placeholder="Your Name"/>
+                            </div>
+                            <div class="form-group" data-validate="Valid email is required: ex@abc.xyz">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" required placeholder="Your Email"/>
+                            </div>
+                            <div class="form-group" data-validate="Password is required">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="pass" id="password" required placeholder="Password"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="re_pass" id="confirm_password" required placeholder="Confirm your password"/>
+                            </div>
+                            <div class="form-group" data-validate="Please agree this!">
+                                <input type="checkbox" name="agree-term" id="agree-term" required class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree with <a href="https://wpuber.com/terms-of-services/" class="term-service">Terms of Services</a> 
+                                    & <a href="https://wpuber.com/privacy-policy/" class="privacy-policy">Privacy Policy</a></label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                            </div>
+                        </form>
+                        <div class="social-login" style="margin-top: 40px;">
+                            <span class="social-label">Or Signup with</span>
+                            
+                            <ul class="socials">
+                                <!-- <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li> -->
+                                <li> <a class="btn btn-outline-dark" href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?response_type=code&redirect_uri=https%3A%2F%2Fdash.getastra.com%2Fauth%2Fgoogle_login&client_id=660487358034-aflds64ihtiafguh1luohm0eneg3brhi.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&access_type=online&approval_prompt=auto&flowName=GeneralOAuthFlow" role="button" style="text-transform:none">
+                                    <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+                                    Google
+                                  </a></li> 
+                                <!-- <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li> -->
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div class="signup-image">
+
+                        <lottie-player src="json/Working-animated-illustration.json"  background="transparent"  speed="1"  style="width: 294px; height: 408px;"  autoplay loop preserveAspectRatio="xMidYMid slice"></lottie-player>
+
+                         <!-- <figure><img src="images/signup-image.jpg" alt="sing up image"></figure> -->
+                        <a href="signin.html" class="signup-image-link">I am already member</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+
+    </div>
+
+
+   
+    
+
+    <!-- JS -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var password = document.getElementById("password")
+  , confirm_password = document.getElementById("confirm_password");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+    </script>
+
+
+<!-- Minified CSS and JS -->
+<link   rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
+
+
+
+
+</body>
+</html>

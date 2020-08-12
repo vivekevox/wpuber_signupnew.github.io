@@ -11,6 +11,8 @@
 
     <!-- Main css -->
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -50,20 +52,31 @@
                             </div>
                             <div class="form-group form-button">
                                 <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                                <span class="social-label">Or Signup with</span>
+                            
+                                <ul class="socials">
+                                   
+                                    <li> <a class="btn btn-outline-dark" href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?response_type=code&redirect_uri=https%3A%2F%2Fdash.getastra.com%2Fauth%2Fgoogle_login&client_id=660487358034-aflds64ihtiafguh1luohm0eneg3brhi.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&access_type=online&approval_prompt=auto&flowName=GeneralOAuthFlow" role="button" style="text-transform:none">
+                                        <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+                                        Google
+                                      </a></li> 
+                                   
+                                </ul>
+
                             </div>
                         </form>
-                        <div class="social-login" style="margin-top: 40px;">
+                        <!-- <div class="social-login" style="margin-top: 40px;">
                             <span class="social-label">Or Signup with</span>
                             
                             <ul class="socials">
-                                <!-- <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li> -->
+                              
                                 <li> <a class="btn btn-outline-dark" href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?response_type=code&redirect_uri=https%3A%2F%2Fdash.getastra.com%2Fauth%2Fgoogle_login&client_id=660487358034-aflds64ihtiafguh1luohm0eneg3brhi.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&access_type=online&approval_prompt=auto&flowName=GeneralOAuthFlow" role="button" style="text-transform:none">
                                     <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
                                     Google
                                   </a></li> 
-                                <!-- <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li> -->
+                               
                             </ul>
-                        </div>
+                        </div> -->
 
 
                     </div>
@@ -72,7 +85,7 @@
                         <lottie-player src="json/Working-animated-illustration.json"  background="transparent"  speed="1"  style="width: 294px; height: 408px;"  autoplay loop preserveAspectRatio="xMidYMid slice"></lottie-player>
 
                          <!-- <figure><img src="images/signup-image.jpg" alt="sing up image"></figure> -->
-                        <a href="signin.html" class="signup-image-link">I am already member</a>
+                        <a href="signin.html" class="signup-image-link">I am already member <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>

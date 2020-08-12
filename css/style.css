@@ -7,7 +7,8 @@ display-flex, .display-flex, .display-flex-center, .signup-content, .signin-cont
 list-type-ulli, .socials {
   list-style-type: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  display: inline-block; }
 
 /* poppins-300 - latin */
 @font-face {
@@ -296,7 +297,7 @@ figure {
   font-size: 14px;
   color: #222;
   display: block;
-  text-align: center;
+  text-align: left;
   margin-top: 43px; }
 
 .term-service {
@@ -317,7 +318,8 @@ figure {
 .form-group {
   position: relative;
   margin-bottom: 25px;
-  overflow: hidden; }
+  overflow: hidden; 
+  margin-bottom: 2rem !important;}
   .form-group:last-child {
     margin-bottom: 0px; }
 
@@ -470,7 +472,9 @@ label.valid {
 
 .social-label {
   display: inline-block;
-  margin-right: 15px; }
+  /* margin-right: 15px; */
+  margin-right: 0px;
+  margin-left: 28px; }
 
 .socials li {
   padding: 5px; }
